@@ -1,0 +1,10 @@
+<div class="d-flex justify-content-center mt-4">
+  <div class="d-flex flex-column">
+    <form action="">
+      <div *ngFor="let item of formFields.fields" type="text" class="form-group">
+        <label for="{{item.name}}">{{item.name}}</label>
+        <input type="{{item.type}}" class="form-control" id="{{item.name}}" placeholder="{{item.placeHolder}}">
+      </div>
+    </form>
+  </div>
+</div>
